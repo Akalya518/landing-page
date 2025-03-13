@@ -1,4 +1,4 @@
-/* imp! CSS RESET */
+
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* imp! BODY CSS */
+/*  BODY CSS */
 
 html{
     font-size: 10px;
@@ -18,8 +18,11 @@ body{
     font-family: 'Open Sans';
 }
 
-/* imp! COMMON CSS */
+/* COMMON CSS */
+h1{
+    color: #fff;
 
+}
 h2{
     font-size: 6rem;
     color: #fff;
@@ -79,17 +82,20 @@ button{
     flex-basis: 40%;
 }
 
-/* imp! NAVBAR CSS */
+/* NAVBAR CSS */
 
 nav{
     background-color: #08192D;
-    padding: 4rem;
+    padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 2;
+   
+  
 }
 
 nav ul{
@@ -112,7 +118,9 @@ nav ul a{
     display: flex;
     gap: 4.5rem;
 }
-
+.logo-mobile img{
+    width: 70px;
+}
 .fa-solid.fa-bars{
     font-size: 2.5rem;
     color: #fff;
@@ -124,14 +132,14 @@ nav ul a{
 }
 
 .navbar-left img {
-    width: 100px;  /* Adjust the width */
-   max-height: 50px; /* Keeps the aspect ratio */
+    width: 100px; 
+    height: 50px;
 }
 
-/* imp! SECTION-1 CSS */
+
 
 .section-1{
-    margin-top: 20rem;
+    margin-top: 7rem;
 }
 
 .section-1 h1{
@@ -149,9 +157,13 @@ nav ul a{
     display: flex;
     margin-top: 4rem;
     gap: 2rem;
+}.section-1-right img{
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
 }
 
-/* imp! SECTION-2 CSS */
+
 
 .section-2{
     align-items: start;
@@ -161,7 +173,7 @@ nav ul a{
     margin-top: 2.5rem;
 }
 
-/* imp! SECTION-3 CSS */
+
 
 .section-3{
     background-image: url(./Images/Section-3/Music-bg.webp);
@@ -212,7 +224,7 @@ nav ul a{
     background-color: #fe0058;
 }
 
-/* imp! SECTION-4 CSS */
+
 
 .section-4-div-1,.section-6-div-1{
     display: flex;
@@ -248,7 +260,7 @@ nav ul a{
     font-weight: bold;
 }
 
-/* imp! SECTION-5 CSS */
+
 
 .section-5{
     gap: 7rem;
@@ -290,7 +302,7 @@ nav ul a{
     margin-bottom: 0;
 }
 
-/* imp! SECTION-6 CSS */
+
 
 .section-6-photo-div .img-div h4{
     font-size: 2.4rem;
@@ -305,7 +317,7 @@ nav ul a{
     border-radius: 100%;
 }
 
-/* imp! FOOTER CSS */
+
 
 .footer-main{
     justify-content: space-evenly;
@@ -340,14 +352,14 @@ footer .quick-links p{
     margin-right: 4rem;
 }
 
-/* imp! MEDIA QUERIES */
+
 
 @media screen and (max-width:991px){
-    /* imp! COMMON CSS */
+    /* COMMON CSS */
     .flex-basis{
         flex-basis: 100%;
     }
-    /* imp! NAVBAR CSS */
+    /*  NAVBAR CSS */
     nav{
         padding: 2rem;
     }
@@ -380,7 +392,7 @@ footer .quick-links p{
 }
 
 @media screen and (max-width:600px){
-    /* imp! COMMON CSS */
+    /COMMON CSS */
     .flex-basis{
         flex-basis: 90%;
     }
@@ -390,7 +402,7 @@ footer .quick-links p{
     .common-layout{
         padding: 4rem 3rem;
     }
-    /* imp! SECTION-1 CSS */
+    /* SECTION-1 CSS */
     .section-1 h1,.section-1 h1 span{
         font-size: 5rem;
     }
@@ -401,26 +413,26 @@ footer .quick-links p{
     .section-1-buttons{
         flex-direction: column;
     }
-    /* imp! SECTION-3 CSS */
+    /*SECTION-3 CSS */
     .section-3{
         width: 90%;
     }
     .section-3 h2{
         margin: 2rem 0;
     }
-    /* imp! SECTION-4 CSS */
+    /*  SECTION-4 CSS */
     .section-4-photo-div,.section-6-photo-div{
         padding: 2rem 0;
         grid-gap: 5rem;
     }
-    /* imp! SECTION-5 CSS */
+    /*  SECTION-5 CSS */
     .section-5{
         gap: 5rem;
     }
     .section-5-right{
         padding: 3rem;
     }
-    /* imp! FOOTER CSS */
+    /*  FOOTER CSS */
     footer.common-layout{
         flex-direction: column;
     }
